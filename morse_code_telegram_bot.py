@@ -9,7 +9,7 @@ async def start(update: Update, context: CallbackContext):
     await update.message.reply_text("Hello! Start by typing something for me to translate into morse code.")
 
 async def help(update: Update, context: CallbackContext):
-    await update.message.reply_text("Just type something in the chat, send it to me and i'll translate it into morse code.")
+    await update.message.reply_text("Just type something in the chat (only in english), send it to me and i'll translate it into morse code for you!")
 
 async def answer_morse_code(update: Update, context: CallbackContext):
     username = update.message.from_user.username
