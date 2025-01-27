@@ -18,7 +18,7 @@ async def answer_morse_code(update: Update, context: CallbackContext):
     await update.message.reply_text(encript(user_message))
 
 def main():
-    TOKEN = ''
+    TOKEN = '<TOKEN>' #Put your telegram bot token here, i'm not going to give you mine.
 
     application = Application.builder().token(TOKEN).build()
 
